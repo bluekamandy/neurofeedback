@@ -1,13 +1,17 @@
 # Neurofeedback
-Integrating an OpenBCI EEG device with an AlloLib synth for neurofeedback for the purpose of meditation. Rewards alpha waves with are correlated with positive focus and calm concentration.
+## Introduction
 
-## Introduction 
+This project Integrates an OpenBCI EEG device which feeds brain data into an AlloLib-based synthesizer. This is done for the purpose of neurofeedback. This system rewards the achievement of alpha waves which are correlated with wakeful rest, calmness, and a quiet mind. In small preliminary studies, alpha waves were found to be [correllated with creative thinking](https://www.sciencedirect.com/science/article/pii/S0010945215001033?via%3Dihub) ([another study](https://www.pnas.org/content/115/52/E12144)).
+
+## Defining Terms 
 
 Neurofeedback is a form of ***biofeedback***. This is the process of enabling people to experience a visual or auditory representation of readings from their body for the purpose of developing the skill to control them. In general, biofeedback can be done using "skin temperature, blood pressure, heart rate, brain waives, and other body conditions." ([Source](https://www.psychologytoday.com/us/blog/the-resilient-brain/201410/what-is-neurofeedback)) Neurofeedback specifically targets the brain waives, enabling patients to experience a visual or auditory representation of their brain waives.
 
 ***Oscillopathies*** are abnormal oscillatory brain activities. These can include "epilepsy, Parkinson’s disease, Alzheimer’s disease, schizophrenia,  anxiety/trauma-related disorders, major depressive disorders, addiction." ([Source](https://www.frontiersin.org/research-topics/17388/oscillotherapeutics---toward-real-time-control-of-pathological-oscillations-in-the-brain))
 
-Electroencephalography (EEG) has existed since 1924. It was invented by German Psychiatrist Hans Berger. ([Source](https://en.wikipedia.org/wiki/Hans_Berger)) EEG enables the recording of brain activity and detects various brain wave patterns that are known to be associated with certain states of consciousness and pathologies.
+Electroencephalography (EEG) has existed since 1924. It was invented by German Psychiatrist Hans Berger. ([Source](https://en.wikipedia.org/wiki/Hans_Berger)) EEG enables the recording of brain activity and detects various brain wave patterns that are known to be associated with certain states of consciousness and pathologies. Berger discovered alpha waves and, for a time, alpha waves were called *Berger waves*.
+
+When connected to computers, EEG's are examples of ***brain computer interfaces*** or BCIs.
 
 ## Statement of Positionality
 
@@ -135,4 +139,21 @@ graph TD;
     C-->D[Compiled C++ application using Allolib and Brainflow];
     
 ```
+
+## Proof-of-Concept Phase: OpenBCI GUI and Testing the Device
+
+![OpenBCI_EyesClosed](images/OpenBCI_EyesClosed.gif)
+
+In the image above you can see the OpenBCI GUI interface. You can also see what happens when I blink and close my eyes.
+
+EEGs are very sensitive to minute muscle movements. **Blinking produces a fairly large spike** in activity because of this.
+
+**Closing the eyes** is a very easy way to immediately increase alpha wave activity. You can see that when I close my eyes, alpha waves immediately become dominant.
+
+## Proof-of-Concept Phase: Networking in OpenBCI GUI
+
+Networking in OpenBCI GUI can be achieved with a variety of formats. There are two relevant documents provided by OpenBCI:
+
+1. [The OpenBCI GUI Networking Output Guide](https://docs.google.com/document/u/1/d/e/2PACX-1vR_4DXPTh1nuiOwWKwIZN3NkGP3kRwpP4Hu6fQmy3jRAOaydOuEI1jket6V4V6PG4yIG15H1N7oFfdV/pub)
+2. [The GUI Widget Guide: Networking Section](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets#networking)
 
