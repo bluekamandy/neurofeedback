@@ -13,12 +13,23 @@ Electroencephalography (EEG) has existed since 1924. It was invented by German P
 
 Human brain waves are divided into 5 different types.
 
-| Frequency Band | Frequency | Brain States                                          |
-| -------------- | --------- | ----------------------------------------------------- |
-| Gamma (𝛾)      | >35 Hz    | Concentration                                         |
-| Beta (β)       | 12-35 Hz  | Anxiety dominant, active, external attention, relaxed |
-| Alpha (⍺)      | 8-12 Hz   | Very relaxed, passive attention                       |
-| Theta (ϴ)      | 4-8 Hz    | Deeply relaxed, inward focused                        |
-| Delta (δ)      | 0.5-4 Hz  | Sleep                                                 |
-|                |           |                                                       |
+| Frequency Band                                               | Frequency | Brain States                                          |
+| ------------------------------------------------------------ | --------- | ----------------------------------------------------- |
+| Gamma (𝛾)                                                    | >35 Hz    | Concentration                                         |
+| Beta (β)                                                     | 12-35 Hz  | Anxiety dominant, active, external attention, relaxed |
+| Alpha (⍺)                                                    | 8-12 Hz   | Very relaxed, passive attention                       |
+| Theta (ϴ)                                                    | 4-8 Hz    | Deeply relaxed, inward focused                        |
+| Delta (δ)                                                    | 0.5-4 Hz  | Sleep                                                 |
+| [Source](https://www.sciencedirect.com/science/article/pii/B9780128044902000026) |           |                                                       |
+
+## Equipment Used
+
+[OpenBCI](https://openbci.com/) is an organization that  of open-source hardware and software solutions for EEG and other forms of biosensing. They have a large community, open-source software packages, and relatively inexpensive hardware to get started. After doing some research I decided to go with the following equipment:
+
+- [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board?variant=13461804483) 4-channel bio-sensing device that samples at 200Hz on each of the 4 channels.
+- An [EEG Headband Kit](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-headband-kit?variant=8120393760782) with dry electrodes.
+- A specialized, dedicated [bluetooth dongle](https://shop.openbci.com/collections/frontpage/products/ganglion-dongle?variant=15473352605768).
+- A [rechargeable battery](https://www.adafruit.com/product/1578) from Adafruit.
+
+
 
