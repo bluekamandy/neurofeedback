@@ -13,14 +13,15 @@ Electroencephalography (EEG) has existed since 1924. It was invented by German P
 
 Human brain waves are divided into 5 different types.
 
-| Frequency Band                                               | Frequency | Brain States                                          |
-| ------------------------------------------------------------ | --------- | ----------------------------------------------------- |
-| Gamma (𝛾)                                                    | >35 Hz    | Concentration                                         |
-| Beta (β)                                                     | 12-35 Hz  | Anxiety dominant, active, external attention, relaxed |
-| Alpha (⍺)                                                    | 8-12 Hz   | Very relaxed, passive attention                       |
-| Theta (ϴ)                                                    | 4-8 Hz    | Deeply relaxed, inward focused                        |
-| Delta (δ)                                                    | 0.5-4 Hz  | Sleep                                                 |
-| [Source](https://www.sciencedirect.com/science/article/pii/B9780128044902000026) |           |                                                       |
+| Frequency Band | Frequency | Brain States                                          |
+| -------------- | --------- | ----------------------------------------------------- |
+| Gamma (𝛾)      | >35 Hz    | Concentration                                         |
+| Beta (β)       | 12-35 Hz  | Anxiety dominant, active, external attention, relaxed |
+| Alpha (⍺)      | 8-12 Hz   | Very relaxed, passive attention                       |
+| Theta (ϴ)      | 4-8 Hz    | Deeply relaxed, inward focused                        |
+| Delta (δ)      | 0.5-4 Hz  | Sleep                                                 |
+
+[Source](https://www.sciencedirect.com/science/article/pii/B9780128044902000026)
 
 ## Equipment Used
 
@@ -30,6 +31,28 @@ Human brain waves are divided into 5 different types.
 - An [EEG Headband Kit](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-headband-kit?variant=8120393760782) with dry electrodes.
 - A specialized, dedicated [bluetooth dongle](https://shop.openbci.com/collections/frontpage/products/ganglion-dongle?variant=15473352605768).
 - A [rechargeable battery](https://www.adafruit.com/product/1578) from Adafruit.
+- [5mm Dry EEG Comb Electrodes](https://shop.openbci.com/collections/frontpage/products/5-mm-spike-electrode-pack-of-30?variant=8120433606670) for areas with hair.
+- [Flat Snap EEG/EDG Electrodes](https://www.fri-fl-shop.com/product/disposable-reusable-flat-snap-eegecg-electrode-tde-202/) for forehead.
 
+## Images
 
+Device put together:
+
+![EEG device put together.](images/EEG_setup.jpg)
+
+Me wearing EEG:
+
+![Man wearing EEG head strap with two electrodes visible on forehead.](images/wearing_EEG.jpg)
+
+Ganglion board:
+
+![Ganglion controller board for EEG.](images/ganglion_board.jpg)
+
+Comb electrode for areas with hair:
+
+![Comb-like electrode that allows readings in areas with hair.](images/comb_electrode.jpg)
+
+Flat electrode for flat, exposed areas like the forehead:
+
+![Two flat EEG electrodes embedded in head strap.](images/flat_electrode.jpg)
 
