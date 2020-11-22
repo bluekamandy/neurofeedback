@@ -150,7 +150,7 @@ EEGs are very sensitive to minute muscle movements. **Blinking produces a fairly
 
 **Closing the eyes** is a very easy way to immediately increase alpha wave activity. You can see that when I close my eyes, alpha waves immediately become dominant.
 
-There is a more a detailed video with chapter markers explaining the entire process [available on my website](https://masoodkamandy.com/index.php/project/neurofeedback/).
+There is a **more a detailed video with chapter markers** explaining the entire process [available on my website](https://masoodkamandy.com/index.php/project/neurofeedback/).
 
 ## Proof-of-Concept Phase: Networking in OpenBCI GUI
 
@@ -160,4 +160,8 @@ Networking in OpenBCI GUI can be achieved with a variety of formats. There are t
 2. [The GUI Widget Guide: Networking Section](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets#networking)
 
 This is the networking panel in OpenBCI GUI:
+
+## External Resources and Studies
+
+[EEG manifestations of nondual experiences in meditators](https://www.sciencedirect.com/science/article/pii/S1053810014001809)
 
