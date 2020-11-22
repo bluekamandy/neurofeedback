@@ -137,7 +137,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 12.0, 164.0, 122.0, 22.0 ],
+					"patching_rect" : [ 11.0, 193.0, 210.0, 22.0 ],
 					"text" : "/dtabg 278 100"
 				}
 
@@ -148,7 +148,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 371.5, 145.0, 82.0, 22.0 ],
+					"patching_rect" : [ 377.5, 122.0, 82.0, 22.0 ],
 					"text" : "print udp-recv"
 				}
 
@@ -219,7 +219,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 202.0, 193.0, 73.0, 22.0 ],
+					"patching_rect" : [ 286.25, 193.0, 73.0, 22.0 ],
 					"text" : "route /dtabg"
 				}
 
@@ -231,7 +231,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 724.0, 52.0, 150.0, 154.0 ],
+					"patching_rect" : [ 594.0, 232.0, 150.0, 154.0 ],
 					"text" : "the ways to investigate what's hapening, in order of goodness:\n\n- message box\n- max's debugger\n- print\n- int/float/etc (these \"coerce\" values)\n\n"
 				}
 
@@ -252,6 +252,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"midpoints" : [ 211.5, 180.0, 295.75, 180.0 ],
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -260,7 +261,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-63", 1 ],
-					"midpoints" : [ 211.5, 150.0, 124.5, 150.0 ],
+					"midpoints" : [ 211.5, 150.0, 211.5, 150.0 ],
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -269,6 +270,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
+					"midpoints" : [ 295.75, 270.0, 210.5, 270.0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -314,14 +316,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
