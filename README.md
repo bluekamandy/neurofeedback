@@ -1,5 +1,5 @@
 # Neurofeedback
-Integrating an OpenBCI EEG device with an AlloLib synth for neurofeedback for the purpose of meditation. Rewards delta, alpha, and low beta waves.
+Integrating an OpenBCI EEG device with an AlloLib synth for neurofeedback for the purpose of meditation. Rewards alpha waves with are correlated with positive focus and calm concentration.
 
 ## Introduction 
 
@@ -18,7 +18,7 @@ My interest in neurofeedback and this specific project comes from several person
 - Embodiment and Cognitive Science
 - Neuroscience
 
-I was diagnosed with autism very late in my life. Under the DSM IV criteria my diagnosis would have been Asperger's Syndrome, and so I do identify as an "aspie." The DSM V conflates autism spectrum disorder and Asperger's syndrome. Regardless of the name, the diagnosis was liberating and helped me to contextualize a lifetime of mistranslations, special interests, and sensory sensitivities. Most importantly, it helped me to understand my strengths in new ways and I often wonder what a diagnosis earlier in my life would have done for me. It gave me a new community.
+I was officially diagnosed with autism very late in my life. Under the DSM IV criteria my diagnosis would have been Asperger's Syndrome, and so I do identify as an "aspie." The DSM V conflates autism spectrum disorder and Asperger's syndrome. Regardless of the name, the diagnosis was liberating and helped me to contextualize a lifetime of mistranslations, special interests, and sensory sensitivities. Most importantly, it helped me to understand my strengths in new ways and I often wonder what a diagnosis earlier in my life would have done for me.
 
 As a person who "thinks differently" I've developed a strong interest in understanding how the brain works as well as developing mental/emotional resilience and focus through neurofeedback and Buddhist meditation. This project is an exploration to that end.
 
@@ -48,6 +48,13 @@ Human brain waves are divided into 5 different types.
 - A [rechargeable battery](https://www.adafruit.com/product/1578) from Adafruit.
 - [5mm Dry EEG Comb Electrodes](https://shop.openbci.com/collections/frontpage/products/5-mm-spike-electrode-pack-of-30?variant=8120433606670) for areas with hair.
 - [Flat Snap EEG/EDG Electrodes](https://www.fri-fl-shop.com/product/disposable-reusable-flat-snap-eegecg-electrode-tde-202/) for forehead.
+
+## Software Used
+
+- [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI) via [Processing](https://processing.org/)
+- [Brainflow](https://brainflow.readthedocs.io/en/stable/index.html)
+- [Allolib](https://github.com/AlloSphere-Research-Group/allolib)
+- [MaxMSP](https://cycling74.com/) for proof of concept phase
 
 ## Images
 
@@ -89,4 +96,43 @@ Although my choices for electrode placement were limited, I have a strong intere
 | ------------------ | -------------------------------- | ------------------------------------------------------------ |
 | Fp1, Fp2           | Left and Right Prefrontal Cortex | Executive Function: planning complex cognitive behavior, personality expression, decision making, and moderating social behaviour. ([Source](https://www.thescienceofpsychotherapy.com/prefrontal-cortex/)) |
 | T3, T4             | Left and Right Temporal Lobe     | Processing sensory input into derived meanings for the appropriate retention of visual memory, language comprehension, and emotion association. ([Source](https://en.wikipedia.org/wiki/Temporal_lobe)) |
+
+## Proof of Concept System Structure
+
+My system is composed of many different components that communicate with each other via the [OSC protocol](https://en.wikipedia.org/wiki/Open_Sound_Control).
+
+OpenBCI's GUI [software](https://github.com/OpenBCI) and [developer documentation](https://github.com/OpenBCI/Documentation) are guiding this process. They recommend the following:
+
+> We recommend using the GUI to start your project and check signals before moving towards full integration. Furthermore, we recommend using the GUI's Networking Widget to stream data for proof-of-concept via UDP, LSL, OSC, or Serial. This allows you to visualize real-time and playback data in the GUI while modifying your application in a separate IDE. ([Source](https://github.com/OpenBCI/Documentation/blob/master/docs/11ForDevelopers/01-SoftwareDevelopment.md))
+
+For this reason, the initial system structure is a proof of concept phase.
+
+*Note: The [component diagram](https://developer.ibm.com/articles/the-component-diagram/) below uses Mermaid. To view Mermaid diagrams on GitHub, you will [unfortunately] need to install the [GitHub + Mermaid extension](https://github.com/BackMarket/github-mermaid-extension). Or just clone my repo and view the README in [Typora](https://typora.io/).*
+
+```mermaid
+graph TD;
+    A[OpenBCI headset/electrodes]== wired ==>B[Ganglion Hardware];
+    B-. Bluetooth 4.0 -.->C[MacBook Pro with OpenBCI Bluetooth Dongle];
+    C-->D["OpenBCI GUI (Processing) Receiver Software"]
+    D-- OpenBCI GUI Networking Widget via OSC -->E["Allolib Interface or MaxMSP Patch (for testing)"]
+    
+```
+
+## Integrated Application System Structure
+
+After initial proof-of-concept, OpenBCI recommends using [Brainflow](https://brainflow.readthedocs.io/en/stable/index.html), a C++ library for communicating with various brain computer interfaces (BCI). From the Brainflow documentation:
+
+> BrainFlow is a library intended to obtain, parse and analyze EEG, EMG, ECG and other kinds of data from biosensors.
+>
+> It provides a **uniform data acquisition API for all supported boards**, it means that you can switch boards without any changes in code and  applications on top of BrainFlow are board agnostic. Also there is **powerful API to perform signal processing** which you can use even without BCI headset. Both of these two APIs are the same across bindings. ([Source](https://brainflow.readthedocs.io/en/stable/index.html))
+
+Once integration of the C++ module with Allolib is complete the component diagram will look like this:
+
+```mermaid
+graph TD;
+    A[OpenBCI headset/electrodes]== wired ==>B[Ganglion Hardware];
+    B-. Bluetooth 4.0 -.->C[MacBook Pro with OpenBCI Bluetooth Dongle];
+    C-->D[Compiled C++ application using Allolib and Brainflow];
+    
+```
 
