@@ -9,6 +9,14 @@ Neurofeedback is a form of ***biofeedback***. This is the process of enabling pe
 
 Electroencephalography (EEG) has existed since 1924. It was invented by German Psychiatrist Hans Berger. ([Source](https://en.wikipedia.org/wiki/Hans_Berger)) EEG enables the recording of brain activity and detects various brain wave patterns that are known to be associated with certain states of consciousness and pathologies.
 
+## Statement of Positionality
+
+My interest in neurofeedback comes from my own personal experience in meditation, as well as my diagnosis of autism spectrum disorder. I was diagnosed very late in my life. The diagnosis was liberating and helped me to contextualize a lifetime of mistranslations and extreme sensory sensitivity. It helped me to understand my strengths in new ways and I often wonder what a diagnosis earlier in my life would have done for me. People are far more aware now of the condition than they were when I was growing up.
+
+As a person who "thinks differently" I've developed a strong interest in understanding how the brain works as well as developing mental/emotional resilience and focus through neurofeedback. This project is an exploration to that end.
+
+For anyone who is interested in gaining a better understanding of people with autism, I recommend reading [the books of Dr. Temple Grandin](https://www.templegrandin.com/templegrandinbooks.html), who teaches in the city I grew up in and who I had the great fortune of meeting as a child.
+
 ## Brain Waves Frequency Bands
 
 Human brain waves are divided into 5 different types.
@@ -55,4 +63,23 @@ Comb electrode for areas with hair:
 Flat electrode for flat, exposed areas like the forehead:
 
 ![Two flat EEG electrodes embedded in head strap.](images/flat_electrode.jpg)
+
+## Position of Electrodes
+
+The position of the eletrodes was somewhat dictaed by the form factor of the headband but influenced heavily by regions of the brain that correspond to areas of specific interest. 
+
+### The 10/20 International Electrode Placement System
+
+![Diagram of the 10-20 System of 21 electrode placement on the head.](https://upload.wikimedia.org/wikipedia/commons/7/70/21_electrodes_of_International_10-20_system_for_EEG.svg)
+
+The [10/20 system](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)) is an international system to describe the placement of electrodes on the head for research. Each circle in the diagram above corresponds to an area of the scalp and the brain.
+
+### My Choices in the 10/20 System
+
+Although my choices for electrode placement were limited, I have a strong interest in cognition/executive function, as well as the sensory/memory processing centers of the brain. That happens to correspond with two areas of the brain:
+
+| Electrode Location | Corresponding Brain Region       | Brain Region Function                                        |
+| ------------------ | -------------------------------- | ------------------------------------------------------------ |
+| Fp1, Fp2           | Left and Right Prefrontal Cortex | Executive Function: planning complex cognitive behavior, personality expression, decision making, and moderating social behaviour. ([Source](https://www.thescienceofpsychotherapy.com/prefrontal-cortex/)) |
+| T3, T4             | Left and Right Temporal Lobe     | Processing sensory input into derived meanings for the appropriate retention of visual memory, language comprehension, and emotion association. ([Source](https://en.wikipedia.org/wiki/Temporal_lobe)) |
 
