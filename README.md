@@ -84,7 +84,7 @@ Flat electrode for flat, exposed areas like the forehead:
 
 ## Position of Electrodes
 
-The position of the eletrodes was somewhat dictaed by the form factor of the headband but influenced heavily by regions of the brain that correspond to areas of specific interest. 
+The position of the eletrodes was somewhat dictated by the form factor of the headband but influenced heavily by regions of the brain that correspond to areas of specific interest. 
 
 ### The 10/20 International Electrode Placement System
 
