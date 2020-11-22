@@ -11,9 +11,16 @@ Electroencephalography (EEG) has existed since 1924. It was invented by German P
 
 ## Statement of Positionality
 
-My interest in neurofeedback comes from my own personal experience in meditation, as well as my diagnosis of autism spectrum disorder. I was diagnosed very late in my life. The diagnosis was liberating and helped me to contextualize a lifetime of mistranslations and extreme sensory sensitivity. It helped me to understand my strengths in new ways and I often wonder what a diagnosis earlier in my life would have done for me. People are far more aware now of the condition than they were when I was growing up.
+My interest in neurofeedback and this specific project comes from several personal interests:
 
-As a person who "thinks differently" I've developed a strong interest in understanding how the brain works as well as developing mental/emotional resilience and focus through neurofeedback. This project is an exploration to that end.
+- My late diagnosis of autism spectrum disorder.
+- Buddhism and meditation
+- Embodiment and Cognitive Science
+- Neuroscience
+
+I was diagnosed with autism very late in my life. Under the DSM IV criteria my diagnosis would have been Asperger's Syndrome, and so I do identify as an "aspie." The DSM V conflates autism spectrum disorder and Asperger's syndrome. Regardless of the name, the diagnosis was liberating and helped me to contextualize a lifetime of mistranslations, special interests, and sensory sensitivities. Most importantly, it helped me to understand my strengths in new ways and I often wonder what a diagnosis earlier in my life would have done for me. It gave me a new community.
+
+As a person who "thinks differently" I've developed a strong interest in understanding how the brain works as well as developing mental/emotional resilience and focus through neurofeedback and Buddhist meditation. This project is an exploration to that end.
 
 For anyone who is interested in gaining a better understanding of people with autism, I recommend reading [the books of Dr. Temple Grandin](https://www.templegrandin.com/templegrandinbooks.html), who teaches in the city I grew up in and who I had the great fortune of meeting as a child.
 
@@ -76,7 +83,7 @@ The [10/20 system](https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)) is 
 
 ### My Choices in the 10/20 System
 
-Although my choices for electrode placement were limited, I have a strong interest in cognition/executive function, as well as the sensory/memory processing centers of the brain. That happens to correspond with two areas of the brain:
+Although my choices for electrode placement were limited, I have a strong interest in cognition/executive function, as well as the sensory/memory processing centers of the brain. That happens to correspond with two areas of the brain that my headband can reach:
 
 | Electrode Location | Corresponding Brain Region       | Brain Region Function                                        |
 | ------------------ | -------------------------------- | ------------------------------------------------------------ |
