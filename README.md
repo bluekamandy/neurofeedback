@@ -146,7 +146,7 @@ graph TD;
 
 In the image above you can see the OpenBCI GUI interface. You can also see what happens when I blink and close my eyes.
 
-EEGs are very sensitive to minute muscle movements. **Blinking produces a fairly large spike** in activity because of this.
+EEGs are very sensitive to minute muscle movements. **Blinking produces a fairly large spike** in activity because of this. Whatsmore, opening the eyes suppresses alpha waves and increases beta waves. It is thought that this happens because of the information flooding into the brain through the eyes. ([Source](https://sapienlabs.org/eeg-and-meditation/))
 
 **Closing the eyes** is a very easy way to immediately increase alpha wave activity. You can see that when I close my eyes, alpha waves immediately become dominant.
 
