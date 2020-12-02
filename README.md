@@ -161,7 +161,38 @@ Networking in OpenBCI GUI can be achieved with a variety of formats. There are t
 
 This is the networking panel in OpenBCI GUI:
 
+![OpenBCI_networking](images/OpenBCI_networking.png)
+
+There are several options when it comes to data types you can transmit using OSC. Because my experience with digital signal processing and FFT is limited, I chose BandPower, where each of the bands is already separated. 
+
+ ![OpenBCI_datatypes](/Users/masoodkamandy/Desktop/_MAT/01_2020_Fall/_Digital_Audio_Programming/_ProgrammingProjects/neurofeedback/images/OpenBCI_datatypes.png)
+
+Up until now, it all seems self explanatory, but OSC did not function as I predicted so I had to sort out some problems. Thanks to the OpenBCI community I was able to solve my initial problems.
+
+## Proof-of-Concept Phase: OSC Communicating to MaxMSP
+
+This was the method I initially [and incorrectly] used to input signals into Max and OSC:
+
+![first_Max_input](images/first_Max_input.png)
+
+You can see I'm receiving data and it all looks good. The problem arises when you have 4 different sensors. Using this method I was only ever seeing the 4th stream, as is indicated by the "4." to the left of the different bands. There didn't seem to be a way I could see to differentiate between the 4 different electrodes I have on my device. Differentiating is, of course, important because I'm sensing different brain regions that have specific significance for my project.
+
+At first I decided I'd shift over to time-series data, which is a new concept for me. Because I wanted to quickly see something I created and hear some kind of output, I simply mapped the signals onto audible wavelengths with an oscillator.
+
+![time-series-audio](images/time-series-audio.gif)
+
+At this point I made the decision that I wanted to engage with the OpenBCI community and ask about what I was doing wrong with my first method and OSC. In my confusion I [headed to the OpenBCI forums and asked for help](https://openbci.com/forum/index.php?p=/discussion/comment/15062) in how I should be dealing with OSC signals from the OpenBCI GUI.
+
+I received [a very fast and generous response from Richard Waltman](https://openbci.com/forum/index.php?p=/discussion/comment/15062) on the forums. He was even generous enough to provide a Max patch to show me how to properly deal with the OSC signals that are being transmitted by OpenBCI GUI.
+
+The patch Richard wrote to demonstrate introduced me to the concept of [routepass](https://docs.cycling74.com/max7/refpages/routepass?q=) in Max. Because the first argument is the channel, I can essentially route them through the outputs
+
+
+
 ## External Resources and Studies
 
 [EEG manifestations of nondual experiences in meditators](https://www.sciencedirect.com/science/article/pii/S1053810014001809)
 
+## Acknowledgments
+
+[Richard Waltman](http://richardwaltman.com/) was generous in helping me to understand how to pass information from OpenBCI properly via OSC to Max.
