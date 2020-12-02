@@ -181,6 +181,8 @@ At first I decided I'd shift over to time-series data, which is a new concept fo
 
 ![time-series-audio](images/time-series-audio.gif)
 
+[Watch with sound on Vimeo](https://vimeo.com/482845941). ***NOTE:*** Turn your volume down. It is very high pitched.
+
 At this point I made the decision that I wanted to engage with the OpenBCI community and ask about what I was doing wrong with my first method and OSC. In my confusion I [headed to the OpenBCI forums and asked for help](https://openbci.com/forum/index.php?p=/discussion/comment/15062) in how I should be dealing with OSC signals from the OpenBCI GUI.
 
 I received [a very fast and generous response from Richard Waltman](https://openbci.com/forum/index.php?p=/discussion/comment/15062) on the forums. He was even generous enough to provide a Max patch to show me how to properly deal with the OSC signals that are being transmitted by OpenBCI GUI.
