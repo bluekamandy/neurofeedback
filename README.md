@@ -101,6 +101,34 @@ Although my choices for electrode placement were limited, I have a strong intere
 | Fp1, Fp2           | Left and Right Prefrontal Cortex | Executive Function: planning complex cognitive behavior, personality expression, decision making, and moderating social behaviour. ([Source](https://www.thescienceofpsychotherapy.com/prefrontal-cortex/)) |
 | T3, T4             | Left and Right Temporal Lobe     | Processing sensory input into derived meanings for the appropriate retention of visual memory, language comprehension, and emotion association. ([Source](https://en.wikipedia.org/wiki/Temporal_lobe)) |
 
+### More Sources on Fp1, Fp2, T3, and T4
+
+> The **T3** electrode site is in the middle and more superior part of the temporal lobe, around Brodmann areas 22 and 21. In a right-handed person (and left-handed individuals when this is still their dominant hemi- sphere), this is an area involved with **memory for verbal material** and **initial memory storage**.
+>
+> ...
+>
+> In the right temporal area, Arruda, Walker, Weiler, and Valentino (1999) found that **T4 and T6 are importantly in- volved with vigilance and sustained attention**. In their research, when there was less beta activity at T4 and T6, lower performance was found on continuous performance tests.
+>
+> ...
+>
+> Right temporal activation (Brodmann area 22; **T4** electrode) has also been found in a study of **memory-driven arousal of anxiety** (Liotti et al., 2000).
+>
+> ...
+>
+> The first autistic group studied had a highly sigynificant **hypoperfusion in both temporal lobes** centered in associative auditory and adjacent multimodal cortex. This was detected in 76% of the autistic children, and virtually identical results were found in an extension of the study with a second autistic group.
+>
+
+[https://doi.org/10.1300/J184v09n01_08]
+
+> Neurologists have observed that lesions occurring in specific regions of the brain produce specific symptoms mostly related to these regions. For example, frontal lobes, **FP1**, **FP2**, FPZ, FZ, F3, F4, F7 are responsible for **immediate and sustained attention, time management, social skills, emotions, empathy, working memory, executive planning, moral fiber or character**. Each region represents a specific feeling or task; Thus identification of these areas provides the best and the most accurate neurofeedback treatment. 
+>
+> ...
+>
+> Temporal lobes, **T3**, **T4**, T5 and T6 have various functions. **Left hemisphere** functions are associated with **reading (word recognition), memory, learning and a positive mood**, while **right hemisphere** functions are related to **music, anxiety, facial recognition, and sense of direction**.
+>
+
+[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4892319/]
+
 ## Proof of Concept System Structure
 
 My system is composed of many different components that communicate with each other via the [OSC protocol](https://en.wikipedia.org/wiki/Open_Sound_Control).
@@ -198,3 +226,5 @@ The patch Richard wrote to demonstrate introduced me to the concept of [routepas
 ## Acknowledgments
 
 [Richard Waltman](http://richardwaltman.com/) was generous in helping me to understand how to pass information from OpenBCI properly via OSC to Max.
+
+My professor Karl Yerkes, whose support, feedback, and patience enabled this project and helped me to do something I thought was beyond my level.
