@@ -129,6 +129,20 @@ Although my choices for electrode placement were limited, I have a strong intere
 
 [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4892319/]
 
+## Alpha Protocol Training
+
+The goal of this system is going to be basic relative to the multitude of protocols in use for neurofeedback. I will not provide a comprehensive list of protocols, but they are available [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4892319/).
+
+> The alpha wave of the brain is usually associated with alert relaxation ([Evans & Abarbanel, 1999](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4892319/#B26)). The alpha mood is described as a calm and pleasant situation. All alpha frequencies describe creative activity of the brain, so that it is used in the process of relaxation (relaxing the muscles), which eventually leads to sleep; Such waves emerge and expand rapidly on the skin. The evidence shows that alpha waves increases during meditation.
+
+Because beta frequences and higher are associated with anxiety and hypervigilance, my goal is going to be to increase alpha waves through an auditory reward process.
+
+Alpha training also overlaps with the protocol for people with ASD.
+
+> There are several diagnostic tools designed to show abnormalities in brain’s function for autism. They are (1) High-beta activity related to anxiety; (2) The high activity of delta/theta corresponding with the slow cortex, lack of attention, impulsivity and hyperactivity; and (3) Abnormal EEG/seizure activity. High beta type is the most common one seen among children with ASD (approximately 50–60% of individuals with ASD) ([Coben, Linden, & Myers, 2010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4892319/#B10); [Kouijzer, van Schie, de Moor, Gerrits, & Buitelaar, 2010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4892319/#B45)). The goal of neurofeedback in children with autism is to inhibit theta-alpha ratio while enhancing beta wave. Efficacy of neurofeedback in children diagnosed with autism has been well researched in qualitative case studies summarized in [Table 7](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4892319/table/T7/?report=objectonly).
+
+([Source for both quotes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4892319/))
+
 ## Proof of Concept System Structure
 
 My system is composed of many different components that communicate with each other via the [OSC protocol](https://en.wikipedia.org/wiki/Open_Sound_Control).
@@ -217,7 +231,13 @@ I received [a very fast and generous response from Richard Waltman](https://open
 
 The patch Richard wrote to demonstrate introduced me to the concept of [routepass](https://docs.cycling74.com/max7/refpages/routepass?q=) in Max. Because the first argument is the channel, I can essentially route them through the outputs
 
+## Beginnings of an Interface
 
+
+
+## Help from Karl: Three Starter Patches to Promote Alpha Waves
+
+My teacher Karl Yerkes provided me with some starter patches to deal with the input 
 
 ## External Resources and Studies
 
