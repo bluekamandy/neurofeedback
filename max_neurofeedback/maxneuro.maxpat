@@ -1126,7 +1126,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.000000000000057, 330.0, 336.0, 33.0 ],
-					"text" : "Signals Being Received"
+					"text" : "Visualize Received Signals"
 				}
 
 			}
@@ -1922,7 +1922,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 433.0, 345.0, 1157.0, 281.5 ],
+					"patching_rect" : [ 433.0, 345.0, 1157.0, 285.0 ],
 					"proportion" : 0.5
 				}
 
