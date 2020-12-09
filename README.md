@@ -250,7 +250,7 @@ Once I verify that I'm receiving a signal, I route it to be visualized.
 
 ### Visualizing the Signal
 
-<img src="images/POC-02-visualize-signals.png" alt="POC-02-visualize-signals" style="zoom:50%;" />
+<img src="images/POC-02-visualize-signals.png" alt="POC-02-visualize-signals" style="zoom: 25%;" />
 
 One of the biggest challenges with the multislider in Max was getting the scale to look logorithmic. EEG signals when visualized as bars should be displayed logarithmically to make sense. When viewed on a linear scale, there is just not enough to visualize at the low end.
 
@@ -280,7 +280,13 @@ Here's the patch in a somewhat modified form:
 
 The really interesting aspect of this patch is that as the alpha levels increase, the frequency of the beat aligns with alpha frequency. In this case, it reduces from mid alpha to low alpha. I may expand the range so that the feedback is more obvious in the future. For example, right now if there are no alpha waves the binaural beat that is created is 10 Hz. As alpha goes up, you get to 8 Hz, which is a low alpha. I kept it narrow, because I did not want to accidentally [entrain](https://www.sciencedirect.com/topics/psychology/entrainment) the meditator out of alpha, but I might expand it to the higher end of alpha.
 
-I also added some audio feedback to let you know that you had reached a threshold that indicates that you are at a higher relative level of alpha. The 
+I also added some audio feedback to let you know that you had reached a threshold that indicates that you are at a higher relative level of alpha. The trickiest part of this was figuring out how to use a "completion handler" (in programming parlance) in Max. The vast majority of tutorials on how to use the playlist in Max do not care whether the audio is done playing or not. This caused unfortunate stuttering and if I reached threshold multiple times too quickly, or if I maintained threshold for too long, the audio clip would play over and over again and cut off. Needless to say, that's not conducive to a meditative state!
+
+Thankfully I was able to figure out how to determine whether the audio clip was done playing and created a simple switch that would prevent it from triggering if the audio was playing. That's illustrated here:
+
+<img src="images/POC-06-funky-switch.png" alt="POC-06-funky-switch" style="zoom: 50%;" />
+
+I've outlined in red the funky switch that prevents audio from being triggered while it's playing. It took some experimentation, but I was excited to get it working. It made me grateful for having learned completion handlers in Swift.
 
 ## External Resources and Studies
 
