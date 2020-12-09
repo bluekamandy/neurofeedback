@@ -21,12 +21,13 @@ My interest in neurofeedback and this specific project comes from several person
 - Buddhism and meditation
 - Embodiment and Cognitive Science
 - Neuroscience
+- Having several people close to me who suffer from mental illness that involves an inability to control thoughts.
 
 I was officially diagnosed with autism very late in my life. Under the DSM IV criteria my diagnosis would have been Asperger's Syndrome, and so I do identify as an "aspie." The DSM V conflates autism spectrum disorder and Asperger's syndrome. Regardless of the name, the diagnosis was liberating and helped me to contextualize a lifetime of mistranslations, special interests, and sensory sensitivities. Most importantly, it helped me to understand my strengths in new ways and I often wonder what a diagnosis earlier in my life would have done for me.
 
 As a person who "thinks differently" I've developed a strong interest in understanding how the brain works as well as developing mental/emotional resilience and focus through neurofeedback and Buddhist meditation. This project is an exploration to that end.
 
-For anyone who is interested in gaining a better understanding of people with autism, I recommend reading [the books of Dr. Temple Grandin](https://www.templegrandin.com/templegrandinbooks.html), who teaches in the city I grew up in and who I had the great fortune of meeting as a child.
+For anyone who is interested in gaining a better understanding of people with autism, I recommend reading [the books of Dr. Temple Grandin](https://www.templegrandin.com/templegrandinbooks.html), who teaches in the city I grew up in and who I had the great fortune of meeting as a child. The Autistic Brain is the book I'd recommend the most.
 
 ## Brain Waves Frequency Bands
 
@@ -231,13 +232,55 @@ I received [a very fast and generous response from Richard Waltman](https://open
 
 The patch Richard wrote to demonstrate introduced me to the concept of [routepass](https://docs.cycling74.com/max7/refpages/routepass?q=) in Max. Because the first argument is the channel, I can essentially route them through the outputs
 
-## Beginnings of an Interface
+## The Interface of my Proof-of-Concept Max MSP Patch
 
+The working prototype that I was able to create was enabled through careful visualization of the entire process of the OSC signal as it travels through the system. Max affords a great interface for this kind of visualization with a few caveats that I'll describe as I go over the most important elements of the interface.
 
+### Overall Interface
 
-## Help from Karl: Three Starter Patches to Promote Alpha Waves
+<img src="images/Proof-of-concept-interface.png" alt="Proof-of-concept-interface" style="zoom:50%;" />
 
-My teacher Karl Yerkes provided me with some starter patches to deal with the input 
+### OSC Signals Coming In
+
+<img src="images/POC-01-signal-comes-in.png" alt="POC-01-signal-comes-in" style="zoom:50%;" />
+
+Routing the signals as they come in was relatively easy after I understood how OpenBCI organizes the signals coming in. Each channel comes in with the channel number and in the form of a list.
+
+Once I verify that I'm receiving a signal, I route it to be visualized.
+
+### Visualizing the Signal
+
+<img src="images/POC-02-visualize-signals.png" alt="POC-02-visualize-signals" style="zoom:50%;" />
+
+One of the biggest challenges with the multislider in Max was getting the scale to look logorithmic. EEG signals when visualized as bars should be displayed logarithmically to make sense. When viewed on a linear scale, there is just not enough to visualize at the low end.
+
+For this I initially used a straight multiplier, which helped me to visualize the low end, but then the high end would blow out. Ultimately I ended up using an [algorithm provided on a website called Holocode](https://holocodeblog.wordpress.com/2014/04/09/quick-tip-1-linear-logarithmic-dials-in-maxmsp/) and it worked quite well at making the signals coming into the multislider to ultimately look like it had a logarithmic scale.
+
+I believe this is the same as mtof and I'm having trouble really getting the intuition here, but the visualization does seem to respond correctly and it does make the multislider visualization make sense.
+
+### Averaging the Incoming Signals
+
+<img src="images/POC-03-averaging-signals.png" alt="POC-03-averaging-signals" style="zoom:50%;" />
+
+Because the prefrontal and temporal lobes produce alphas at different levels and for different reasons, I decided to separate them. This gives the option of focusing on alpha waves in specific locations of the brain.
+
+I also added the option of using all brain areas averaged.
+
+This will inevitably evolve as I learn more about how the brain works.
+
+### Neurofeedback
+
+<img src="images/POC-04-neurofeedback.png" alt="POC-04-neurofeedback" style="zoom:50%;" />
+
+Karl Yerkes, my Digital Audio Programming lecturer, provided me with three patches that provided the basis for my neurofeedback system. While they were all interesting and may end up in the final project in some way, the binaural beats patch, which he called 'Slow the beat' ended up being my favorite and made the most sense for my system.
+
+Here's the patch in a somewhat modified form:
+
+<img src="images/POC-05-slow-the-beat.png" alt="POC-05-slow-the-beat" style="zoom:50%;" />
+
+The really interesting aspect of this patch is that as the alpha levels increase, the frequency of the beat aligns with alpha frequency. In this case, it reduces from mid alpha to low alpha. I may expand the range so that the feedback is more obvious in the future. For example, right now if there are no alpha waves the binaural beat that is created is 10 Hz. As alpha goes up, you get to 8 Hz, which is a low alpha. I kept it narrow, because I did not want to accidentally [entrain](https://www.sciencedirect.com/topics/psychology/entrainment) the meditator out of alpha, but I might expand it to the higher end of alpha.
+
+I also added some audio feedback to let you know that you had reached a threshold that indicates that you are at a higher relative level of alpha. The 
 
 ## External Resources and Studies
 
