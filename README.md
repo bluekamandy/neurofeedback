@@ -290,9 +290,37 @@ Thankfully I was able to figure out how to determine whether the audio clip was 
 
 I've outlined in red the funky switch that prevents audio from being triggered while it's playing. It took some experimentation, but I was excited to get it working. It made me grateful for having learned completion handlers in Swift.
 
+## Expanding on Binaural Beats Feedback and Entrainment
+
+Now that I have the original neurofeedback work done, I've decided to expand on the idea of "closing the gap" or "slowing the beat." Entrainment is the phenomena of the brain syncing with binaural beats. Because of this phenomena it seems likely that binaural beats may aid in the meditation process and the use of this particular system.
+
+There [is evidence](https://asa-scitation-org.proxy.library.ucsb.edu:9443/doi/10.1121/1.1911890) that 500 hz is the best carrier frequency for auditory binaural beats. There is [also complementary evidence](https://asa-scitation-org.proxy.library.ucsb.edu:9443/doi/10.1121/1.1906629) that a range of 300 - 600 hz is best and it peaks around 460 hz.
+
+We'll do the following:
+
+1. **Low alpha training** for calm relaxation.
+2. **High Alpha training** for focus and creativity. This is largely complete. This will be at 
+3. **Low beta training** for positivity and studying.
+4. **Gamma training** for challenging problem solving activities and memorization.
+
+For now I will skip other frequencies and I will not create a dial or a smooth transition between the different frequencies. This is beyond the scope of this project.
+
+| Carrier Frequency (Hz) | Binaural Beat Frequency (Hz) | Frequency Band Name |
+| ---------------------- | ---------------------------- | ------------------- |
+| 460                    | 7                            | Low Alpha           |
+| 460                    | 12                           | High Alpha          |
+| 460                    | 15                           | Low Beta            |
+| 460                    | 40                           | Gamma               |
+
+
+
+
+
 ## External Resources and Studies
 
 [EEG manifestations of nondual experiences in meditators](https://www.sciencedirect.com/science/article/pii/S1053810014001809)
+
+[Oster Curve](https://www.binauralbeatsmeditation.com/oster-curve/)
 
 ## Acknowledgments
 
