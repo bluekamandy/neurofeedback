@@ -292,35 +292,42 @@ I've outlined in red the funky switch that prevents audio from being triggered w
 
 ## Expanding on Binaural Beats Feedback and Entrainment
 
-Now that I have the original neurofeedback work done, I've decided to expand on the idea of "closing the gap" or "slowing the beat." Entrainment is the phenomena of the brain syncing with binaural beats. Because of this phenomena it seems likely that binaural beats may aid in the meditation process and the use of this particular system.
+Now that I have the original neurofeedback work done, I've decided to expand on the idea of "closing the gap" or "slowing the beat." This will require building out the binaural beat generator.
+
+![POC-07-BasicBinauralBeats](images/POC-07-BasicBinauralBeats.png)
+
+Inside of teh BasicBinauralBeats patch we have:
+
+![POC-08-BinauralBeatsPatch](images/POC-08-BinauralBeatsPatch.png)
+
+Entrainment is the phenomena of the brain syncing with binaural beats. Because of this phenomena it seems likely that binaural beats may aid in the meditation process and the use of this particular system.
 
 There [is evidence](https://asa-scitation-org.proxy.library.ucsb.edu:9443/doi/10.1121/1.1911890) that 500 hz is the best carrier frequency for auditory binaural beats. There is [also complementary evidence](https://asa-scitation-org.proxy.library.ucsb.edu:9443/doi/10.1121/1.1906629) that a range of 300 - 600 hz is best and it peaks around 460 hz.
 
-We'll do the following:
+| Binaural Beat Frequency (Hz) | Frequency Band Name | Purpose                                                 |
+| ---------------------------- | ------------------- | ------------------------------------------------------- |
+| 7                            | Low Alpha           | calm relaxation                                         |
+| 12                           | High Alpha          | focus and creativity                                    |
+| 15                           | Low Beta            | positivity and studying                                 |
+| 40                           | Gamma               | challenging problem solving activities and memorization |
 
-1. **Low alpha training** for calm relaxation.
-2. **High Alpha training** for focus and creativity. This is largely complete. This will be at 
-3. **Low beta training** for positivity and studying.
-4. **Gamma training** for challenging problem solving activities and memorization.
+## Adding a Visualizer
 
-For now I will skip other frequencies and I will not create a dial or a smooth transition between the different frequencies. This is beyond the scope of this project.
+It became clear that I needed a slow visualization of what was happening with my alpha wave activity. I would close my eyes and I couldn't tell if my alphas were actually going up so I decided to use a scrolling visualization.
 
-| Carrier Frequency (Hz) | Binaural Beat Frequency (Hz) | Frequency Band Name |
-| ---------------------- | ---------------------------- | ------------------- |
-| 460                    | 7                            | Low Alpha           |
-| 460                    | 12                           | High Alpha          |
-| 460                    | 15                           | Low Beta            |
-| 460                    | 40                           | Gamma               |
+![POC-09-Visualizer](images/POC-09-Visualizer.png)
 
+## Metronome and the final, expanded slow the beat interface
 
+![POC-10-Final-Interface](images/POC-10-Final-Interface.png)
 
+After interacting with the prototype I decided that the best way to use the data would be to slow down a metronome. The SlowTheBeat patch also needed an expansion that incorporated some of what I learned from the binaural beat generator I built.
 
+![POC-11-Slow-the-beat-extended](images/POC-11-Slow-the-beat-extended.png)
 
 ## External Resources and Studies
 
 [EEG manifestations of nondual experiences in meditators](https://www.sciencedirect.com/science/article/pii/S1053810014001809)
-
-[Oster Curve](https://www.binauralbeatsmeditation.com/oster-curve/)
 
 ## Acknowledgments
 
