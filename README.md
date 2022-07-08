@@ -13,22 +13,6 @@ Electroencephalography (EEG) has existed since 1924. It was invented by German P
 
 When connected to computers, EEG's are examples of ***brain computer interfaces*** or BCIs.
 
-## Statement of Positionality
-
-My interest in neurofeedback and this specific project comes from several personal interests:
-
-- My late diagnosis of autism spectrum disorder.
-- Buddhism and meditation
-- Embodiment and Cognitive Science
-- Neuroscience
-- Having several people close to me who suffer from mental illness that involves an inability to control thoughts.
-
-I was officially diagnosed with autism very late in my life. Under the DSM IV criteria my diagnosis would have been Asperger's Syndrome, and so I do identify as an "aspie." The DSM V conflates autism spectrum disorder and Asperger's syndrome. Regardless of the name, the diagnosis was liberating and helped me to contextualize a lifetime of mistranslations, special interests, and sensory sensitivities. Most importantly, it helped me to understand my strengths in new ways and I often wonder what a diagnosis earlier in my life would have done for me.
-
-As a person who "thinks differently" I've developed a strong interest in understanding how the brain works as well as developing mental/emotional resilience and focus through neurofeedback and Buddhist meditation. This project is an exploration to that end.
-
-For anyone who is interested in gaining a better understanding of people with autism, I recommend reading [the books of Dr. Temple Grandin](https://www.templegrandin.com/templegrandinbooks.html), who teaches in the city I grew up in and who I had the great fortune of meeting as a child. The Autistic Brain is the book I'd recommend the most.
-
 ## Brain Waves Frequency Bands
 
 Human brain waves are divided into 5 different types.
